@@ -2,7 +2,7 @@
 
 # FreeDoc
 
-~~ Cynthia @Yacinth & William @Willyspa
+~~ Cynthia @Yacinth & William @Willyspa & Aliya @A1iya
 
 ## Ruby version
 
