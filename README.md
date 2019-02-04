@@ -70,13 +70,14 @@ $ tp User.all
 
 pour voir les entrées du Tableau User par exemple, tu peux faire pareil avec les autres tableaux etc
 
-##
+## Run server
 
-### Outil pour visualiser la database : https://sqliteonline.com/
+```ruby
+$ rails server
+```
 
-- Tu vas dans file
-- Open DB
-- rails_blog/db/development.sqlite3
-- et tu double clic sur les Tables pour voir ce qu'il y a dedans
+## Got to url and enjoy
+
+http://localhost:3000/
 
 ### A tout de suite les correcteurs <3
