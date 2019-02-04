@@ -1,10 +1,7 @@
 <h1>Bienvenue <%= @first_name %> </h1>
 
-<p>Auteur: <%= @author %></p>
-<p>Titre du Gossip: <%= @title %></p>
-<p>Auteur 
-<% @array_user.each do |i| %>
-<p><%= i.first_name %></p>
+<% @array_gossip.each do |i| %>
+<p><b>Auteur du gossip:</b> <%= i.user.first_name %> <br> <b>Titre du gossip:</b> <%= i.title %></p>
 <%end%>
-<% @array_user.first_name %>
+
 

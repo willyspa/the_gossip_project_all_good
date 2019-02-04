@@ -8,10 +8,8 @@ class WelcomeController < ApplicationController
     @author = User.first.first_name
     @title = Gossip.first.title
 
-    @array_user = User.all
     @array_gossip = Gossip.all
-    @array_user_first_name = User.all.first_name
-    @array_gossip_title = @array_gossip.title
+ 
   end
   
 end
