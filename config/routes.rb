@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get 'static_pages/team'
   get 'welcome/:first_name', to: 'welcome#show'
   get 'potin/:id_gossip', to: 'potin#show'
+  get 'potin/', to: 'potin#show'  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

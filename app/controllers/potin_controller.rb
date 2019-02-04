@@ -3,6 +3,7 @@ class PotinController < ApplicationController
     puts "$" * 60
     puts params[:id_gossip]
     puts "$" * 60
+    id_params_s = params[:id_gossip]
     id_params = params[:id_gossip].to_i
     @array_gossip = Gossip.all
     @gossip = @array_gossip[id_params-1]
