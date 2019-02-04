@@ -26,6 +26,12 @@ $ git clone git@github.com:Yacinth/the_gossip_project_all_good.git
 $ bundle install
 ```
 
+## create Database
+
+```ruby
+$ rails db:create
+```
+
 ## Migration
 
 - Verifier le statut des migrations dans le terminal
@@ -64,19 +70,7 @@ $ tp User.all
 
 pour voir les entrées du Tableau User par exemple, tu peux faire pareil avec les autres tableaux etc
 
-## Console SQLite3
-
-- SQLite3
-
-```ruby
-$ sqlite3 db/development.sqlite3
-```
-
-- Pour checker les attributs d'un tableau (ex Article) execute :
-
-```ruby
-$ PRAGMA table_info(users)
-```
+##
 
 ### Outil pour visualiser la database : https://sqliteonline.com/
 
