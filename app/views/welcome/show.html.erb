@@ -1,5 +1,5 @@
 <h1>Bienvenue <%= @first_name %> </h1>
-
+<p>Voici la liste des potins :</p>
 <% @array_gossip.each do |i| %>
 <p><b>Auteur du gossip:</b> <%= i.user.first_name %> <br> <b>Titre du gossip:</b> <%= i.title %></p>
 <%end%>
