@@ -1,0 +1,9 @@
+<h1>User <%= @user.id %></h1>
+<p><b><%= @user.first_name %> <%= @user.last_name %></b> <br>
+<%= @user.description %>
+
+
+    t.string :last_name
+      t.text :description
+      t.string :email
+      t.integer :age

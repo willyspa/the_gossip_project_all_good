@@ -12,4 +12,6 @@ class PotinController < ApplicationController
     # @id_gossip = Gossip.find(params[:id_gossip])
     # @where_gossip = Gossip.where(id: params[:id_gossip])
   end
+
+
 end
