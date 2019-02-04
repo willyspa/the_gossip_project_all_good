@@ -7,6 +7,11 @@ class WelcomeController < ApplicationController
     @first_name = params[:first_name]
     @author = User.first.first_name
     @title = Gossip.first.title
-    @array_user_all = User.all
+
+    @array_user = User.all
+    @array_gossip = Gossip.all
+    @array_user_first_name = User.all.first_name
+    @array_gossip_title = @array_gossip.title
   end
+  
 end

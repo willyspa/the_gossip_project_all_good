@@ -2,5 +2,9 @@
 
 <p>Auteur: <%= @author %></p>
 <p>Titre du Gossip: <%= @title %></p>
-<p>Auteur <%= @array_user_all.each { |k| puts k[0][1] } %></p>
-<p> puts <%= @array_user_all %> </p>
+<p>Auteur 
+<% @array_user.each do |i| %>
+<p><%= i.first_name %></p>
+<%end%>
+<% @array_user.first_name %>
+
