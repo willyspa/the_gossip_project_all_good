@@ -35,7 +35,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-
+#remporaire pour eviter bug heroku ---------------------------------------------------------
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'
   gem 'factory_bot_rails'
