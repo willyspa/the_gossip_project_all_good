@@ -1,0 +1,8 @@
+<form action= <%= potin_path %> method="POST">
+      Title:<br>
+      <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %> >
+      <input type="text" name="gossip_title">
+      Content:<br>
+      <input type="text" name="gossip_text">
+      <input type="submit" value="Valider">
+</form>
