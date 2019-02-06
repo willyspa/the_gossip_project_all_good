@@ -1,0 +1,15 @@
+
+  <h1><%= @city.name %></h1>
+  <h1>ZIPCODE: <%= @city.zip_code %></h1>
+
+  <% @new_array.each do |i| %>
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"><b>title: </b><%= i.title %></h5>
+      <h5 class="card-text"><b>content:</b> <%= i.content %></h5>
+      
+    </div>
+  </div>
+
+  <%end%>

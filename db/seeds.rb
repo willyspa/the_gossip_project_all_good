@@ -14,6 +14,11 @@ PrivateMessage.destroy_all
 City.destroy_all
 Tag.destroy_all
 User.destroy_all
+PrivateMessage.reset_pk_sequence
+City.reset_pk_sequence
+Tag.reset_pk_sequence
+User.reset_pk_sequence
+Gossip.reset_pk_sequence
 puts "Delete from sqlite_sequence..."
 sleep(1)
 
@@ -39,7 +44,7 @@ sleep(1)
 puts "_______________________________"
 puts ""
 
-15.times do 
+15.times do
   user = User.create!(city_id: City.all.sample.id, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::SiliconValley.quote, email: Faker::Internet.email, age: Faker::Number.between(1, 100))
   puts ""
   puts "user #{user.first_name} #{user.last_name} is #{user.age} yo"
@@ -54,7 +59,7 @@ sleep(1)
 puts "_______________________________"
 puts ""
 
-20.times do 
+20.times do
   gossip = Gossip.create!(user_id: User.all.sample.id, title: Faker::TvShows::SiliconValley.invention, content: Faker::TvShows::Community.quotes)
   puts "User #{gossip.user_id} post :"
   puts "title : #{gossip.title}"
@@ -68,7 +73,7 @@ sleep(1)
 puts "_______________________________"
 puts ""
 
-10.times do 
+10.times do
   tag = Tag.create!(title: Faker::Hipster.word)
   puts "hashtag ##{tag.title}"
   puts ""
@@ -78,7 +83,7 @@ sleep(1)
 puts "_______________________________"
 puts ""
 
-15.times do 
+15.times do
   private_message = PrivateMessage.create!(sender_id: User.all.sample.id, recipient_id: User.all.sample.id, content: Faker::Hipster.paragraph)
   puts "_______________"
   puts ""

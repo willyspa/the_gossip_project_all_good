@@ -1,7 +1,5 @@
 <h1>User <%= @user.id %></h1>
-<p><b><%= @user.first_name %> <%= @user.last_name %>, <%= @user.age%> years old</b> <br>
+<p><b><%= @user.first_name %> <%= @user.last_name %>, <%=@user.age%>  years old, city: <%=@city.name%>  <%= link_to "allez sur la ville", city_path(id:@city.id)  %></b> <br>
 <%= @user.description %><br>
 
 <b>contacter <%= @user.first_name%></b>: <%= @user.email%>
-
-

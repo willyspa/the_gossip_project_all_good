@@ -39,9 +39,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'
+  gem 'activerecord-reset-pk-sequence'
   gem 'factory_bot_rails'
   #Use Faker to create fake data
-  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+  #gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
   #Use table_print to view beautiful table
   gem 'table_print'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

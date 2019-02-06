@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'potin/create', to: 'potin#create'
   get 'potin/:id_gossip', to: 'potin#show'
   get 'user/:id_user', to: 'user#show'
+
+  resources :city
   #For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   #  resources :potins do
